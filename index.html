@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skill-container {
+            margin: 20px 0;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 20px;
+            margin-top: 5px;
+        }
+        .progress {
+            height: 100%;
+            text-align: center;
+            line-height: 20px; /* Center text vertically */
+            color: white; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\VivoBook\OneDrive\Pictures\taabi.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="text-shadow">Vince Clark Tabi</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h2 class="text-shadow">About Me</h2>
+        <p>Hello! I'm Vince, a dedicated and passionate student with a keen interest in technology and software development. I enjoy learning new programming languages and frameworks, and I strive to improve my skills every day. In my free time, I love working on personal projects, participating in hackathons, and collaborating with others to create innovative solutions. My goal is to become a proficient developer and contribute to exciting projects that make a difference.</p>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2 class="text-shadow">Projects</h2>
+        <div class="project-container">
+            <div class="project" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <h3>Vivamax Actor</h3>
+                <p>Loving every moment</p>
+            </div>
+            <div class="project" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <h3>Useless</h3>
+                <p>Be useless so nobody can use you</p>
+            </div>
+            <div class="project" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <h3>Athlete</h3>
+                <p>Sports = Life</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2 class="text-shadow">Skills</h2>
+        <div class="skill-container">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Proficient in HTML, CSS, and JavaScript.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%; background-color: #4CAF50;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Experience with Python, Java, and C++.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%; background-color: #2196F3;">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Database Management</h3>
+                <p>Knowledge of SQL and NoSQL databases.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%; background-color: #FF9800;">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Version Control</h3>
+                <p>Familiar with Git and GitHub for version control.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%; background-color: #9C27B0;">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="typing" class="fade-in">
+        <h2 class="text-shadow">What I Do</h2>
+        <p id="typing-animation" class="typing">I specialize in creating dynamic and responsive web applications. My focus is on delivering high-quality code and user-friendly interfaces. I enjoy tackling complex problems and finding efficient solutions through programming. Whether it's developing a new feature or optimizing existing code, I am committed to continuous learning and improvement in my craft.</p>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2 class="text-shadow">Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="thank-you-message" class="thank-you-message" style="display: none;">Thanks for submitting your portfolio!</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
